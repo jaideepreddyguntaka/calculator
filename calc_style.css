@@ -1,0 +1,67 @@
+@import url(https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e3eb;
+}
+.container{
+    position: relative;
+    max-width: 25vw;
+    width:100%;
+    border-radius: 1vw;
+    padding: 3vh 3vh 3vh 3vh;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.display{
+    margin-bottom: 2vh;
+    height: 15vh;
+    width:100%;
+    font-size: 4vh;
+    text-align: right;
+    outline: none;
+    border: none;
+    color: black;
+    pointer-events: none; 
+    /*
+    in this all events will have, like:mouse,keypad,etc.... will not work as you made pointer-events as none.
+    */
+}
+.btn{
+    display: grid;
+    grid-gap: 0.5vw;
+    grid-template-columns:repeat(4,1fr);
+    /*
+    The fr unit allows you to define grid tracks as fractions of the available space.
+    If a grid container has 4 columns with 1fr each, they will each take up an equal amount of space, i.e., each column will be 25% of the available space. 
+    */   
+}
+.btn button{
+    padding: 2.5vh 2.5vh;
+    border-radius: 1vh;
+    border: none;
+    font-weight: lighter;
+    font-size: large;
+    cursor: pointer;
+}
+.btn button:active{
+    transform: scale(0.99);
+}
+.operator {
+    background-color: #f2f2f2;
+    color: #168af0;
+}
+button:hover {
+    background-color: #e0e0e0;
+}
+
+
